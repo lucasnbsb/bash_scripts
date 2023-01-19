@@ -6,6 +6,9 @@ IFS=""
 aliases=(
     "alias code='flatpak run com.visualstudio.code .'"
     "alias spring='/home/lucas/Desktop/sts-4.17.1.RELEASE/./SpringToolSuite4 & disown'"
+    "alias diploma='(flatpak run com.visualstudio.code /home/lucas/diploma-digital-frontend & disown) && (flatpak run io.dbeaver.DBeaverCommunity & disown) && (/home/lucas/Desktop/sts-4.17.1.RELEASE/./SpringToolSuite4 & disown) && exit'"
+    "alias off='shutdown now'"
+    "alias fone='until bluetoothctl connect 20:22:05:25:0A:76; do  echo ...  ; sleep 1; done'"
     )
 # loop the array and check if the lines are in the file. if not then add
 for t in ${aliases[@]}; 
